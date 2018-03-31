@@ -45,9 +45,7 @@ getPkgList()
 		sed -re 's/([+\_])/\\\1/g'
 	fi
 }
-# NetworkManager is a scourge upon the earth that must be purged and cleansed.
-ln -s /dev/null /etc/systemd/system/NetworkManager.service
-ln -s /dev/null /etc/systemd/system/NetworkManager-dispatcher.service
+
 # Build the keys
 pacman-key --init
 pacman-key --populate archlinux

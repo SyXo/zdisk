@@ -10,7 +10,7 @@ dhclient
 dhcp
 dhcpcd
 dosfstools
-dropbear
+#dropbear
 efibootmgr
 efitools
 efivar

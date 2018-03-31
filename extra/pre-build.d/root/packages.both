@@ -2,3 +2,5 @@
 # Packages from the AUR can be specified.
 # We need to install all X drivers.
 mtree-git
+
+# User packages go here

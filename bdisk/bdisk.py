@@ -54,13 +54,13 @@ def bdisk(args):
     print('{0}: Finish.'.format(datetime.datetime.now()))
 
 def parseArgs():
-    args = argparse.ArgumentParser(description = 'BDisk - a tool for building live/rescue media.',
-                                   epilog = 'brent s. || 2017 || https://bdisk.square-r00t.net')
+    args = argparse.ArgumentParser(description = 'ZDisk - a tool for building live/rescue media.',
+                                   epilog = 'BDisk fork || 2018 || https://github.com/GIJack/zdisk')
     args.add_argument('buildini',
                       metavar = '/path/to/build.ini',
-                      default = '/etc/bdisk/build.ini',
+                      default = os.environ['PWD'] + '/build.ini',
                       nargs = '?',
-                      help = 'The full/absolute path to the build.ini to use for this run. The default is /etc/bdisk/build.ini, but see https://bdisk.square-r00t.net/#the_code_build_ini_code_file.')
+                      help = 'The full/absolute path to the build.ini to use for this run. The default is in the current directory, but see https://bdisk.square-r00t.net/#the_code_build_ini_code_file.')
     return(args)
 
 def main():
